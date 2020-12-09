@@ -554,8 +554,25 @@ header{
     position: relative;
 }
 .billedervenstre {
-    display: flex;
-    flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: var(--white-main);
+
+}
+
+.billedervenstre h2 {
+    margin-top: 3vh;
+}
+.billedervenstre img {
+    margin-top: 3vh;
+}
+
+.billede-container {
+    width: 30%;
+    height: 100px;
 }
 .info-venstre {
     display: flex;
@@ -569,8 +586,17 @@ header{
     margin-top: 0px;
     color: var(--white-main);
 }
-
-
+.breakdance-main {
+    height: 100vh;
+    width: 100%;
+    background: url(slides/breakdance.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
   @media screen and (min-width: 480px) {
       .forside {
           background-color: var(--black-main);
@@ -630,18 +656,27 @@ header{
 
 .sommerbarn-main {
     background-image: url(slides/sommerbarn-desktop.png);
+    image-rendering: -webkit-optimize-contrast;
 }
 .greengear-main {
 
     background: url(slides/greengear-desktop.png);
+    image-rendering: -webkit-optimize-contrast;
     background-size: cover;
   }
   .venstre-main {
 
     background: url(slides/venstre-desktop.png);
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
   }
+  .breakdance-main {
+
+    background: url(slides/breakdance-desktop.png);
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
 }
+  }
 
   @media screen and (max-width: 480px) {
 
@@ -652,5 +687,4 @@ header{
     .imgto {
         display: none;
     }
-    
-  }
+}
