@@ -7,9 +7,11 @@
     font-family: brandon-grotesque, sans-serif;
     margin: 0;
 }
+/*Baggrunds farven på body skal sort, medmindre andet bliver sagt */
 body {
     background-color: var(--black-main);
 }
+/*Styling af forsiden, bl.a. baggrundsbillede*/
 .forside {
     background-image: url(bla-baggrund-mobil.png);
     background-repeat: no-repeat;
@@ -20,6 +22,7 @@ body {
     image-rendering: -webkit-optimize-contrast;
 }
 
+/*Styling af headeren*/
 header{
     width: 100%;
     height: 75px;
@@ -29,16 +32,18 @@ header{
     position: fixed;
 }
 
+/*Styling af toplogoet*/
 .mobilelogo {
     width: 60px;
     margin-left: 25%;
     margin-right: auto;
     margin-top: 10px;
 }
+/*Fjerner checkboksen, så den ikke ses */
 #menuArea input {
     display: none;
   }
-  
+  /*Styling af burger menu iconet*/
   .open {
     background-color: var(--white-main);
     width: 45px;
@@ -93,7 +98,7 @@ header{
   .menuOpen:hover .open:after {
     top: 5px;
   }
-  
+  /*Styling af burger menu ind  hold */
   .menu {
     position: fixed;
     width: 100vw;
@@ -122,20 +127,21 @@ header{
     padding-bottom: 20px;
     margin-top: -170px;
   }
-
+  /*Styling af socialmedia iconer */
   .menu .menuContent img {
       width: 50px;
       margin-top: 20px;
       margin-right: 10px;
   }
 
-  
+  /*Styling af ul */
   .menu ul {
     list-style: none;
     padding: 0;
     margin: 0 auto;
   }
   
+  /*styling af knapper i burgermenu */
   .menu ul li a {
     display: block;
     color: white;
@@ -146,14 +152,7 @@ header{
     padding: 10px 0;
   }
   
-  .menu ul li a:hover {
-    color: #ff8702;
-  }
-  
-  .menu ul li:hover {
-    background: white;
-  }
-  
+  /*Styling af animationen omkring tryk på burgermenu*/
   .menuEffects {
     opacity: 0;
     visibility: hidden;
@@ -213,7 +212,7 @@ header{
     bottom: 0
   }
   .intro-jg h1 {
-      font-weight: 900;
+      font-weight: 400;
       font-size: 40px;
       margin-bottom: -20px;
       letter-spacing: 0.05em;
@@ -237,55 +236,6 @@ header{
     border-radius: 15px;
 }
 
-  /*Portfolio siden*/
-
-  .top-portfolio {
-      width: 100%;
-      height: 100%;
-      background-color: var(--black-main);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 98;
-      padding-top: 75px;
-
-  }
-
-  .top-portfolio h1 {
-      color: var(--white-main);
-      font-size: 55px;
-      font-weight: 900;
-      padding: 25px;
-  }
-
-  .mesh-logo {
-      width: 350px;
-      margin-top: 2vh;
-  }
-
-  .portfolio-container {
-      width: 100%;
-      height: auto;
-      top: 26vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      position: relative;
-  }
-  .portfolio-container a {
-      margin-top: 10px;
-      width: 90%;
-      position: relative;
-  }
-
-  .portfolio-container a img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 5px;
-  }
-
   /*Kontakt*/
 
   .main-kontakt {
@@ -306,7 +256,6 @@ header{
     .kontakt {
       width: 75%;
       height: 65vh;
-      background-image: url(kontakt-baggrund.png);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -324,12 +273,19 @@ header{
   .kontakt .big-input {
     width: 250px;
     height: 150px;
+    color: var(--white-main);
     background-color: rgba(7, 7, 7, 0.466);
 
 }
 .kontakt button {
     width: 250px;
     height: 100px;
+    background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    background-color:#2dabf9;
+    border-radius:3px;
+    font-size: 30px;
+    font-weight: 900;
+    border:1px solid #0b0e07;
 }
 
 .om {
@@ -340,6 +296,7 @@ header{
     flex-direction: column;
     align-items: center;
     align-content: center;
+    justify-content: center;
     color: var(--white-main);
 }
 
@@ -357,7 +314,7 @@ header{
     
 }
 
-/*mulig portfolio*/
+/*Portfolio*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -366,14 +323,14 @@ header{
     margin: auto;
   }
   
-  /* Hide the images by default */
+  /* Gem slides */
   .mySlides {
     display: none;
     image-rendering: -webkit-optimize-contrast;
 
   }
 
-  /* Next & previous buttons */
+  /* Frem og tilbage knapper */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -411,30 +368,6 @@ header{
     text-align: center;
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
 
   .semere {
       z-index: 1;
@@ -678,12 +611,15 @@ position: relative;
           float: left;
           left: 0;
           margin-left: 10px;
+          margin-right: 2px;
+          margin-top: 0px;
       }
 
       .big-nav {
           width: 35%;
           float: right;
           margin-right: 10px;
+          margin-left: auto;
           margin-top: 10px;
           display: flex;
           justify-content: space-evenly;
@@ -752,15 +688,23 @@ position: relative;
     background: url(slides/standard-desktop.png);
     background-size: cover;
   }
+
+  .kontaktflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
   @media screen and (max-width: 480px) {
-
     .big-nav {
         display: none;
         opacity: 0;
     }
     .imgto {
         display: none;
+    }
+    header h3 {
+      display: none;
     }
 }
