@@ -597,6 +597,64 @@ header{
     justify-content: flex-end;
     position: relative;
 }
+.micom-main {
+height: 100vh;
+width: 100%;
+background: url(slides/micomdata.png);
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+position: relative;
+}
+.standard-main {
+    height: 100vh;
+    width: 100%;
+    background: url(slides/standard.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    }
+.spacegym-main {
+    height: 100vh;
+    width: 100%;
+    background: url(slides/spacegym.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.hovedinfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--white-main);
+
+}
+
+.hovedinfo h1 {
+    font-size: 10vw;
+    margin-top: 3vh;
+    align-self: center;
+}
+
+.hovedinfo h2 {
+    margin-top: 20px;
+    font-size: 5vw;
+}
+
+.hovedinfo p {
+    margin-bottom: 20px;
+    font-size: 3vw;
+}
   @media screen and (min-width: 480px) {
       .forside {
           background-color: var(--black-main);
@@ -676,7 +734,25 @@ header{
     image-rendering: -webkit-optimize-contrast;
     background-size: cover;
 }
+.spacegym-main {
+    height: 100vh;
+    width: 100%;
+    background: url(slides/spacegym-desktop.png);
+    background-size: cover;
   }
+  .micom-main {
+    height: 100vh;
+    width: 100%;
+    background: url(slides/micomdata-desktop.png);
+    background-size: cover;
+  }
+  .standard-main {
+    height: 100vh;
+    width: 100%;
+    background: url(slides/standard-desktop.png);
+    background-size: cover;
+  }
+}
 
   @media screen and (max-width: 480px) {
 
