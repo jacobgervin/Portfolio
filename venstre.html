@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="forside">
+<html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QHQWCDTH9"></script>
@@ -10,20 +10,23 @@
 
      gtag('config', 'G-1QHQWCDTH9');
     </script>
+    <meta name="Description" content="Jacob Gervin, Multimediedesigner. Her er min portfolio.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hfg5pfy.css">
-    <link rel="icon" href="JG-lille-logo.svg" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="icon" href="JG-lille-logo.svg">
     <title>JG</title>
 </head>
 <body>
     <header>
         <div id="menuArea">
-            <input type="checkbox" id="menuToggle"></input>
+            <input type="checkbox" id="menuToggle">
           
           <label for="menuToggle" class="menuOpen">
-            <div class="open"></div>
+            <span class="open"></span>
           </label>
           
           <div class="menu menuEffects">
@@ -59,7 +62,24 @@
     <h2>MINE OPGAVER</h2>
     <p>Her fungerer jeg som SoMe medhjælper for borgmesterkandidaten. Jeg er primært fokuseret omkring at skabe visuelt indhold til Facebook siden.</p>
     <h2>FÆRDIGE OPSLAG</h2>
+    <ul id="slides">
+      <li class="slide showing"><img src="billeder-venstre/Budget - Karina.jpg" alt=""></li>
+      <li class="slide"><img src="billeder-venstre/Erhvervsvenlighed.jpg" alt=""></li>
+      <li class="slide"><img src="billeder-venstre/coverbillede4.png" alt=""></li>
+      <li class="slide"><img src="billeder-venstre/Forsøg1.jpg" alt=""></li>
+  </ul>
+    <script>
+      var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
 
+function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+    </script>
   </section>
+
 </body>
 </html>
