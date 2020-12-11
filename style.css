@@ -307,7 +307,12 @@ header{
     align-items: center;
     align-content: center;
     justify-content: center;
+    text-align: center;
     color: var(--black-main);
+}
+
+.om li {
+  list-style: none;
 }
 
 .om img {
